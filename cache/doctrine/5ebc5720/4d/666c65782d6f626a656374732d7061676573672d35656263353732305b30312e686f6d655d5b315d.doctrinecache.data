@@ -1,0 +1,15 @@
+1725372898
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"home";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:6:{s:5:"title";s:10:"Clean Blog";s:4:"menu";s:4:"Home";s:10:"subheading";s:37:"A Clean Blog Theme by Start Bootstrap";s:12:"header_image";s:11:"home-bg.jpg";s:7:"content";a:4:{s:5:"items";s:14:"@self.children";s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}s:5:"limit";i:4;s:10:"pagination";b:1;}s:10:"pagination";b:1;}s:11:"frontmatter";s:238:"title: Clean Blog
+menu: Home
+subheading: A Clean Blog Theme by Start Bootstrap
+header_image: home-bg.jpg
+
+content:
+    items: @self.children
+    order:
+        by: date
+        dir: desc
+    limit: 4
+    pagination: true
+
+pagination: true";s:8:"markdown";s:0:"";}s:7:"storage";a:7:{s:3:"key";s:4:"home";s:11:"storage_key";s:7:"01.home";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1712043146;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1712043146;}}s:8:"children";a:9:{s:27:"classic-modern-architecture";b:0;s:24:"failure-is-not-an-option";b:0;s:14:"focus-and-blur";b:0;s:20:"just-some-text-today";b:0;s:15:"london-industry";b:0;s:15:"random-thoughts";b:0;s:37:"science-has-not-yet-mastered-prophecy";b:0;s:21:"sunshine-in-the-hills";b:0;s:16:"the-urban-jungle";b:0;}s:8:"checksum";s:32:"8d14eead27d57dda26f33498a0113ea5";}}

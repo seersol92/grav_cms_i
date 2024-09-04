@@ -1,0 +1,5 @@
+1725372899
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:17:"contact/thank-you";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:9:"Thank You";s:10:"subheading";s:39:"Have questions? I have answers (maybe).";s:12:"header_image";s:14:"contact-bg.jpg";}s:11:"frontmatter";s:97:"title: Thank You
+subheading: Have questions? I have answers (maybe).
+header_image: contact-bg.jpg";s:8:"markdown";s:70:"Thank you for message! I will try to get back to you within 24 hours!
+";}s:7:"storage";a:6:{s:3:"key";s:17:"contact/thank-you";s:11:"storage_key";s:20:"03.contact/thank-you";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1712043146;s:8:"markdown";a:1:{s:0:"";a:1:{s:7:"default";i:1712043146;}}s:8:"checksum";s:32:"e73f7ca349f2d8586626f27d7f525c29";}}

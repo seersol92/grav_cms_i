@@ -1,0 +1,11 @@
+state: enabled
+email: admin@gmail.com
+fullname: Admin
+title: Admin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$kDjNcKzqS64u5PoNaLnyf.v9pTJJh8BWc9Q69V2iCxjoZtgdeAkmG

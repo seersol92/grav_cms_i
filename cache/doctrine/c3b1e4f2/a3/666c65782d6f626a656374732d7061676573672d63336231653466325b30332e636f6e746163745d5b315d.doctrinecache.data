@@ -1,0 +1,61 @@
+1725380644
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:7:"contact";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:5:{s:5:"title";s:10:"Contact Me";s:4:"menu";s:7:"Contact";s:10:"subheading";s:39:"Have questions? I have answers (maybe).";s:12:"header_image";s:14:"contact-bg.jpg";s:4:"form";a:5:{s:4:"name";s:12:"contact-form";s:13:"message_color";s:6:"danger";s:6:"fields";a:4:{i:0;a:6:{s:4:"name";s:4:"name";s:5:"label";s:29:"THEME_CLEAN_BLOG.CONTACT.NAME";s:11:"placeholder";s:29:"THEME_CLEAN_BLOG.CONTACT.NAME";s:4:"type";s:4:"text";s:8:"validate";a:1:{s:8:"required";b:1;}s:7:"classes";s:12:"form-control";}i:1;a:6:{s:4:"name";s:5:"email";s:5:"label";s:30:"THEME_CLEAN_BLOG.CONTACT.EMAIL";s:11:"placeholder";s:30:"THEME_CLEAN_BLOG.CONTACT.EMAIL";s:4:"type";s:5:"email";s:8:"validate";a:1:{s:8:"required";b:1;}s:7:"classes";s:12:"form-control";}i:2;a:5:{s:4:"name";s:5:"phone";s:5:"label";s:30:"THEME_CLEAN_BLOG.CONTACT.PHONE";s:11:"placeholder";s:30:"THEME_CLEAN_BLOG.CONTACT.PHONE";s:4:"type";s:4:"text";s:7:"classes";s:12:"form-control";}i:3;a:7:{s:4:"name";s:7:"message";s:5:"label";s:32:"THEME_CLEAN_BLOG.CONTACT.MESSAGE";s:11:"placeholder";s:32:"THEME_CLEAN_BLOG.CONTACT.MESSAGE";s:4:"type";s:8:"textarea";s:4:"rows";i:5;s:8:"validate";a:1:{s:8:"required";b:1;}s:7:"classes";s:12:"form-control";}}s:7:"buttons";a:1:{i:0;a:2:{s:4:"type";s:6:"submit";s:5:"value";s:29:"THEME_CLEAN_BLOG.CONTACT.SEND";}}s:7:"process";a:4:{i:0;a:1:{s:5:"email";a:4:{s:4:"from";s:31:"{{ config.plugins.email.from }}";s:2:"to";a:1:{i:0;s:31:"{{ config.plugins.email.from }}";}s:7:"subject";s:33:"[Contact] {{ form.value.name|e }}";s:4:"body";s:36:"{% include 'forms/data.html.twig' %}";}}i:1;a:1:{s:4:"save";a:4:{s:10:"fileprefix";s:8:"contact-";s:10:"dateformat";s:9:"Ymd-His-u";s:9:"extension";s:3:"txt";s:4:"body";s:35:"{% include 'forms/data.txt.twig' %}";}}i:2;a:1:{s:7:"display";s:9:"thank-you";}i:3;a:1:{s:5:"reset";b:1;}}}}s:11:"frontmatter";s:1753:"title: Contact Me
+menu: Contact
+subheading: Have questions? I have answers (maybe).
+header_image: contact-bg.jpg
+
+form:
+    name: contact-form
+    message_color: danger
+    fields:
+        -
+            name: name
+            label: THEME_CLEAN_BLOG.CONTACT.NAME
+            placeholder: THEME_CLEAN_BLOG.CONTACT.NAME
+            type: text
+            validate:
+                required: true
+            classes: form-control
+        -
+            name: email
+            label: THEME_CLEAN_BLOG.CONTACT.EMAIL
+            placeholder: THEME_CLEAN_BLOG.CONTACT.EMAIL
+            type: email
+            validate:
+                required: true
+            classes: form-control
+        -
+            name: phone
+            label: THEME_CLEAN_BLOG.CONTACT.PHONE
+            placeholder: THEME_CLEAN_BLOG.CONTACT.PHONE
+            type: text
+            classes: form-control
+        -
+            name: message
+            label: THEME_CLEAN_BLOG.CONTACT.MESSAGE
+            placeholder: THEME_CLEAN_BLOG.CONTACT.MESSAGE
+            type: textarea
+            rows: 5
+            validate:
+                required: true
+            classes: form-control
+    buttons:
+        -
+            type: submit
+            value: THEME_CLEAN_BLOG.CONTACT.SEND
+    process:
+        - email:
+            from: "{{ config.plugins.email.from }}"
+            to:
+                -
+                    "{{ config.plugins.email.from }}"
+            subject: "[Contact] {{ form.value.name|e }}"
+            body: "{% include 'forms/data.html.twig' %}"
+        - save:
+            fileprefix: contact-
+            dateformat: Ymd-His-u
+            extension: txt
+            body: "{% include 'forms/data.txt.twig' %}"
+        - display: thank-you
+        - reset: true";s:8:"markdown";s:126:"Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!
+";}s:7:"storage";a:7:{s:3:"key";s:7:"contact";s:11:"storage_key";s:10:"03.contact";s:8:"template";s:7:"contact";s:17:"storage_timestamp";i:1712043146;s:8:"markdown";a:1:{s:0:"";a:1:{s:7:"contact";i:1712043146;}}s:8:"children";a:1:{s:9:"thank-you";b:0;}s:8:"checksum";s:32:"a71d2154b8a8cd3f551579ef27d29850";}}

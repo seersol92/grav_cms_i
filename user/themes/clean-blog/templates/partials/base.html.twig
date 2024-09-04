@@ -1,0 +1,96 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getLanguage ?: 'en' }}">
+    <head>
+        {% block head %}
+            {% include 'partials/head.html.twig' %}
+        {% endblock %}
+        {% do assets.addCss('theme://css/styles.css') %}
+
+    </head>
+    <body>
+        {% block header %}
+            {% include 'partials/header.html.twig' %}
+        {% endblock %}
+
+        {% block content %}{% endblock %}
+
+        {% block footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+
+
+        <!-- Bootstrap 5 JS and Popper.js CDN -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Function to add AOS attributes
+                function addAOSAttributes() {
+                    const accordionItems = document.querySelectorAll(".accordion-li");
+                    accordionItems.forEach((item, index) => {
+                        item.setAttribute("data-aos", "fade-up");
+                        item.setAttribute("data-aos-offset", "50");
+                        item.setAttribute("data-aos-delay", (index * 20).toString());
+                        item.setAttribute("data-aos-duration", "1000");
+                        item.setAttribute("data-aos-easing", "ease-in-out");
+                    });
+                }
+
+                // Call the function to add AOS attributes
+                addAOSAttributes();
+
+                // Initialize AOS
+                AOS.init();
+            });
+        </script>
+        <script>
+
+            jQuery(document).ready(function(){
+                window.onscroll = function() {
+                    if (window.pageYOffset >= 500){
+                        jQuery('.tab-sticky-mob').css({position: 'fixed', left:'0', right:'0', width:'fit-content'});
+                    }
+                    else {
+                        jQuery('.tab-sticky-mob').css({position: ''});
+                    }
+                }
+            });
+
+        </script>
+        <script>
+            jQuery(document).ready(function(){
+                window.onscroll = function() {
+                    if (window.pageYOffset >= 400){
+                        jQuery('.tab-sticky').css({position: 'fixed',left:'40px',right:'0',width:'fit-content', bottom: '30px'});
+                    }
+                    else {
+                        jQuery('.tab-sticky').css({position: '', bottom: ''});
+                    }
+                }
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var accItems = document.querySelectorAll(".accordion-li");
+
+                accItems.forEach(function (item) {
+                    item.addEventListener("click", function () {
+                        // Toggle active class on clicked item
+                        accItems.forEach(function (li) {
+                            if (li === item) {
+                                li.classList.toggle("active");
+                            } else {
+                                li.classList.remove("active");
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+
+    </body>
+</html>
